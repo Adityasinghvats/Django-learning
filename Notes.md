@@ -9,3 +9,5 @@
 - make apps `python manage.py startapp`.
 - next step add name of app to setting.py of default app.
 - make urls.py in new app and copy old urls.py and to control transfer now in main app urls.py 
+- making migrations for admin panel use `python manage.py migrate`.
+- create super user `python manage.py createsuperuser` to create admin.

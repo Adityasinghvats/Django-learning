@@ -11,3 +11,4 @@
 - make urls.py in new app and copy old urls.py and to control transfer now in main app urls.py 
 - making migrations for admin panel use `python manage.py migrate`.
 - create super user `python manage.py createsuperuser` to create admin.
+- admin `aditya` password `aditya@01`.

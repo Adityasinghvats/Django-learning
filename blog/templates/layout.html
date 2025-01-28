@@ -13,7 +13,11 @@
     {% tailwind_css %}
 </head>
 <body>
-    <nav>This is the navbar</nav>
+    <nav class="bg-slate-800 p-4 mb-4">
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+        </ul>
+    </nav>
     {% block content %}{% endblock %}
 </body>
 </html>

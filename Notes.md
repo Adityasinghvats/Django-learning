@@ -1,5 +1,5 @@
 ## Installation 
-- As we are using uv for virtua env use uv pip install `<name>`.
+- As we are using uv for virtual env use uv pip install `<name>`.
 - `django-admin startproject <name>` - first time.
 - each main project has a sub folder with same name.
 - cd into main folder then `python manage.py runserver`.
@@ -12,3 +12,6 @@
 - making migrations for admin panel use `python manage.py migrate`.
 - create super user `python manage.py createsuperuser` to create admin.
 - admin `aditya` password `aditya@01`.
+- start tailwind server while making changes in tailwind classes by `python manage.py tailwind start`.
+- In a database, cascade is a feature that automatically updates or deletes related records in other tables when a change is made to a parent table.
+- After making any changes to models.py run `python manage.py makemigrations`.

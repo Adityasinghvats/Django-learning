@@ -10,3 +10,6 @@ def about(request):
 
 def profile(request):
     return render(request, 'website/profile.html')
+
+def mine(request):
+    return render(request, 'mine/all_mine.html')

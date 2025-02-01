@@ -15,3 +15,5 @@
 - start tailwind server while making changes in tailwind classes by `python manage.py tailwind start`.
 - In a database, cascade is a feature that automatically updates or deletes related records in other tables when a change is made to a parent table.
 - After making any changes to models.py run `python manage.py makemigrations`.
+- Django form has 3 states, just show the content, send filled form, crate form and user can choose options.
+- By default all django forms are CSRF attack proof.

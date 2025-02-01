@@ -11,12 +11,13 @@ class ChaiVarity(models.Model):
         ('KL','KIWI'),
     ]
     name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='chais/', null=True, blank=True)  # Make image optional
+    image = models.ImageField(upload_to='chais/', null=True, blank=True)
+    # image is optinal but not uploading one will cause error in the all_mine.html page
     date_added = models.DateTimeField(default=timezone.now)
     type = models.CharField(max_length=2, choices=CHAI_TYPE_CHOICE)
     description = models.TextField(default='empty')
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
 
 # One to many
 class ChaiReview(models.Model):
@@ -26,7 +27,7 @@ class ChaiReview(models.Model):
     comment = models.TextField()
     date_added = models.DateTimeField(default=timezone.now)
     def __str__(self):
-        return f'{self.user.username} review for {self.chai.name}'
+        return f'Review for {self.chai.name}'
     
 
 # Many to many

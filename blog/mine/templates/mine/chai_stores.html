@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="p-5 content-center">
+    <div class="bg-slate-200 p-5 rounded-lg">
+        <form action="" method="POST" class="text-black">
+            {% csrf_token %}
+            {{form}}
+            <button type="submit" class="bg-slate-500 p-3 rounded-lg">Search Store</button>
+        </form>
+    </div>
+</div>
+
+{% if stores %}
+<div class="p-5 content-center">
+    <div class="bg-slate-200 p-5 rounded-lg text-black">
+        <h1 class="text-4xl p-5">Stores availabe</h1>
+            <ul>
+                {% for store in stores %}
+                <li class="p-2 text-center">
+                    <h2>{{store.name}} - {{store.location}}</h2>
+                </li>
+                {% endfor %}
+            </ul>
+    </div>
+</div>
+
+{% endif %}
+{% endblock  %}

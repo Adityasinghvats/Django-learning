@@ -5,6 +5,13 @@ Home Page
 {% endblock title %}
 
 {% block content %}
-<h1 class="bg-orange-500 text-3xl p-2">Chai aur code | Homepage</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, obcaecati. Reprehenderit enim repudiandae quasi dolorum rem id qui quo iure!</p>
+<h1 class="bg-orange-500 text-3xl p-2">Chai Store</h1>
+<a href="{% url '/mine/all_mine' %}">
+    <button
+    type="button"
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-full"
+    >
+       Show all Chai
+    </button>
+</a>
 {% endblock content %}
